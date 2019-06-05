@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.meetings.InvitationListFragment">
+
+    <TextView
+        android:id="@+id/text_no_invitations"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:textColor="@color/backgroundMenu"
+        android:text="@string/no_new_invitations"/>
+
+    <ListView
+        android:id="@+id/list_invitations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8.0sp"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/button_refresh_invitations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/actionButton"
+        android:gravity="center"
+        android:text="@string/refresh_list"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/please_enter_new_phone_number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/hintDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/please_enter_old_phone_number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/hintDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:background="@drawable/input_text_style"
+        android:ems="10"
+        android:hint="@string/phone_format_hint"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textColor="@color/rectangleColorActiveText"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:background="@drawable/input_text_style"
+        android:ems="10"
+        android:hint="@string/phone_format_hint"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textColor="@color/rectangleColorActiveText"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background_rec_blue"
+        android:gravity="center"
+        android:onClick="LOGin"
+        android:text="@string/confirm"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/rectangleColorActiveText"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+</android.support.constraint.ConstraintLayout>

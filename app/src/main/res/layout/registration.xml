@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">#sssss</include>
+
+    <EditText
+        android:id="@+id/your_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_text_style"
+        android:ems="10"
+        android:hint="@string/your_name"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColor="@color/rectangleColorActiveText"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar" />
+
+    <EditText
+        android:id="@+id/edit_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_text_style"
+        android:ems="9"
+        android:hint="@string/phone_format_hint"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textColor="@color/rectangleColorActiveText"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        app:layout_constraintStart_toEndOf="@+id/spinner_choose_country_code"
+        app:layout_constraintTop_toBottomOf="@+id/think_your_login" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="12dp"
+        android:singleLine="false"
+        android:text="@string/activation_code_on_phone"
+        android:textColor="@color/hintDescription"
+        app:layout_constraintStart_toStartOf="@+id/think_your_login"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone_number" />
+
+    <EditText
+        android:id="@+id/email_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_text_style"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textColor="@color/rectangleColorActiveText"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/password_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_text_style"
+        android:ems="10"
+        android:hint="@string/password_not_less_than_eight"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="@color/rectangleColorActiveText"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_tv" />
+
+    <EditText
+        android:id="@+id/re_password_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_text_style"
+        android:ems="10"
+        android:hint="@string/re_password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="@color/rectangleColorActiveText"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_tv" />
+
+    <CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:textColorLink="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/re_password_tv" />
+
+    <TextView
+        android:id="@+id/agreement"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:onClick="agreement"
+        android:text="@string/personal_agreement"
+        android:textColor="@color/hintDescription"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        app:layout_constraintStart_toEndOf="@+id/remember_me"
+        app:layout_constraintTop_toBottomOf="@+id/re_password_tv" />
+
+    <TextView
+        android:id="@+id/registration_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_background_rec_blue"
+        android:gravity="center"
+        android:onClick="uRegistration"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/reg_app"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/background_light"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agreement" />
+
+    <TextView
+        android:id="@+id/enter_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:onClick="login_in_app"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/authorization"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registration_tv" />
+
+    <EditText
+        android:id="@+id/think_your_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_text_style"
+        android:ems="10"
+        android:hint="@string/think_login"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColor="@color/rectangleColorActiveText"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/your_name_tv" />
+
+    <Spinner
+        android:id="@+id/spinner_choose_country_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:padding="23dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toEndOf="@+id/edit_country_code"
+        app:layout_constraintTop_toTopOf="@+id/edit_country_code" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:singleLine="true"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/think_your_login" />
+
+    <EditText
+        android:id="@+id/edit_country_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_text_style"
+        android:ems="3"
+        android:hint="@string/country_code"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:singleLine="true"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar" />
+
+    <TextView
+        android:id="@+id/text_enter_into_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_background_rec_blue"
+        android:gravity="center"
+        android:onClick="uRegistration"
+        android:padding="10dp"
+        android:text="@string/enter_app"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agreement" />
+
+
+</android.support.constraint.ConstraintLayout>

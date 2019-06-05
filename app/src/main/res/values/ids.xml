@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="notifications" type="id" />
+    <item name="contact_us" type="id" />
+    <item name="sync_contact_list" type="id" />
+</resources>

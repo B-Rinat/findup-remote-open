@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.github.library.bubbleview.BubbleTextView
+        android:id="@+id/bubble_text_message_right_bubble"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp"
+        android:text="Hello BubbleTextVew"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:angle="8dp"
+        app:arrowCenter="true"
+        app:arrowHeight="10dp"
+        app:arrowLocation="right"
+        app:arrowPosition="18dp"
+        app:arrowWidth="8dp"
+        app:bubbleColor="#a1dfac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

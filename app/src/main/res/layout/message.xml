@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chatBackground"
+    tools:context=".activities.message.MessageActivity">
+
+    <!--- @drawable/chat_background -->
+
+    <TextView
+        android:id="@+id/text_open_chat"
+        style="@style/CustomToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:onClick="back_to_map"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/tap_to_back_to_map"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="130dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_text_rl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_open_chat"
+        app:layout_constraintVertical_bias="0.034">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.03">
+
+            <LinearLayout
+                android:id="@+id/list_messages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_text_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <EditText
+            android:id="@+id/edit_input_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/round_boarder"
+            android:ems="10"
+            android:hint="@string/write_text"
+            android:inputType="textMultiLine"
+            android:paddingBottom="10dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:singleLine="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/send_btn_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/input_text_rl">
+
+        <TextView
+            android:id="@+id/editText10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/round_boarder"
+            android:ems="10"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="354dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/editText10"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="13dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            app:srcCompat="@drawable/ic_send_black_24dp"
+            tools:layout_editor_absoluteX="297dp"
+            tools:layout_editor_absoluteY="413dp" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

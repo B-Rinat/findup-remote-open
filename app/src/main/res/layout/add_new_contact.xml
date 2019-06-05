@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPrimary">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar">
+
+        <EditText
+            android:id="@+id/edit_new_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="38dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_text_style"
+            android:ems="10"
+            android:hint="@string/name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColor="@color/rectangleColorActiveText"
+            android:textColorHint="@color/rectangleColorPassiveText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--EditText
+            android:id="@+id/new_contact_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="38dp"
+            android:layout_marginStart="38dp"
+            android:background="@drawable/input_text_style"
+            android:ems="10"
+            android:hint="@string/surname"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColor="@color/rectangleColorActiveText"
+            android:textColorHint="@color/rectangleColorPassiveText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="83dp" /-->
+
+        <!--EditText
+            android:id="@+id/new_contact_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="38dp"
+            android:layout_marginStart="38dp"
+            android:background="@drawable/input_text_style"
+            android:digits="0123456789+-() {}[]"
+            android:ems="10"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="@color/rectangleColorActiveText"
+            android:textColorHint="@color/rectangleColorPassiveText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="196dp" /-->
+
+        <EditText
+            android:id="@+id/edit_new_contact_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_text_style"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/rectangleColorActiveText"
+            android:textColorHint="@color/rectangleColorPassiveText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_country_code_new_contact" />
+
+        <Button
+            android:id="@+id/button_save_new_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="38dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background_rec_blue"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_invalid_hint" />
+
+        <EditText
+            android:id="@+id/edit_country_code_new_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="38dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_text_style"
+            android:digits="0123456789+-() {}[]"
+            android:ems="12"
+            android:hint="@string/phone_number"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_new_contact_name" />
+
+        <TextView
+            android:id="@+id/phone_invalid_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/edit_new_contact_email"
+            app:layout_constraintTop_toBottomOf="@+id/edit_new_contact_email" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/backgroundDarkBlue</item>
+
+    </style>
+
+    <style name="CustomToolBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/backgroundMenu</item>
+        <item name="android:textColorSecondary">#ffffff</item>
+    </style>
+
+    <style name="CustomPopupStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/textColorPrimary</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">-4dp</item>
+    </style>
+    
+    <style name="ProgressTheme">
+        <item name="colorAccent">@color/progressBar</item>
+    </style>
+
+</resources>

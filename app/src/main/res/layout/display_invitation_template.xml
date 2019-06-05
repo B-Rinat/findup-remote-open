@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/display_invitation_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/text_contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:maxLines="1"
+        android:paddingBottom="3dp"
+        android:text="Contact name"
+        android:textColor="@color/textHint" />
+
+
+    <TextView
+        android:id="@+id/text_date_time"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="30dp"
+        android:text="17/01/2019 23:13:53"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/text_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_contact_name"
+        android:layout_marginEnd="150dp"
+        android:layout_marginStart="15dp"
+        android:maxLines="1"
+        android:paddingBottom="10dp"
+        android:text="Phone Number"
+        android:textColor="@color/dark" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_invitation_accept_reject_chooser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_phone_number"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="15dp">
+
+        <Button
+            android:id="@+id/button_accept"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:focusable="false"
+            android:text="@string/accept"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_reject" />
+
+        <Button
+            android:id="@+id/button_reject"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="110dp"
+            android:background="@color/red"
+            android:focusable="false"
+            android:text="@string/decline"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

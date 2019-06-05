@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "6108967332",
+    "firebase_url": "https://reliable-jet-213320.firebaseio.com",
+    "project_id": "reliable-jet-213320",
+    "storage_bucket": "reliable-jet-213320.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6108967332:android:36ee9c1d25f23158",
+        "android_client_info": {
+          "package_name": "production.app.rina.findme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6108967332-3lum3dah1sfqrdp9bi1f3sbfi0o4gdg2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "production.app.rina.findme",
+            "certificate_hash": "02d4bed172c093ebdf1f90f372785c8f9f5a4dfe"
+          }
+        },
+        {
+          "client_id": "6108967332-jbgsies5bck0vqhop8tl6lcf8e06i6rm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwZyu2Mmw6P9GxgnvF7ML6XgjAohQcJ84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6108967332-jbgsies5bck0vqhop8tl6lcf8e06i6rm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

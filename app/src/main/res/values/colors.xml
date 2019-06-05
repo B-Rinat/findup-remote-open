@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#C23616</color>
+    <color name="green">#44BD32</color>
+    <color name="white">#ffffff</color>
+    <color name="dark">#000000</color>
+    <color name="textActive">#101010</color>
+    <color name="textHint">#273C75</color>
+    <color name="textNonactive">#535353</color>
+    <color name="backgroundPrimary">#F1F5F7</color>
+    <color name="buttonActive">#007FC1</color>
+    <color name="actionButton">#0097E6</color>
+    <color name="backgroundMenu">#273C75</color>
+    <color name="backgroundDarkBlue">#192A56</color>
+
+    <color name="colorPrimary">#00c19b</color>
+    <color name="colorPrimaryDark">#00a486</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="rectangleColorPassive">#cccccc</color>
+    <color name="rectangleColorActive">#cccccc</color>
+    <color name="rectangleColorPassiveText">#999999</color>
+    <color name="rectangleColorActiveText">#252525</color>
+    <color name="hintDescription">#6f6f6f</color>
+    <color name="buttonBackgroundColorPassive">#10d0a0</color>
+    <color name="blue">#0692fd</color>
+    <color name="chatBackground">#b8c7c5</color>
+    <color name="progressBar">#9C27B0</color>
+</resources>
+

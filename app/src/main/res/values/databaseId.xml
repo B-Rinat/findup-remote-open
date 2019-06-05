@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="MESSAGE_PUBLIC_KEY" translatable="false">4076</string>
+    <string name="FIREBASE_TOKEN_ID" translatable="false">39</string>
+    <string name="LAST_USER_ACTIVITY_TIME" translatable="false">124</string>
+    <string name="USER_ID" translatable="false">1557</string>
+    <string name="USER_LOCATION" translatable="false">225</string>
+    <string name="LOCATION" translatable="false">219</string>
+    <string name="PHONE_STATUS_REJECT" translatable="false">808</string>
+    <string name="FUNCTION_ABN_URL" translatable="false">91</string>
+    <string name="USER_ABN_URL" translatable="false">233</string>
+    <string name="USER_XSRF" translatable="false">40</string>
+    <string name="USER_ROLE_CLIENT" translatable="false">191</string>
+    <string name="USER_ROLE" translatable="false">115</string>
+    <string name="TELEPHONE" translatable="false">30</string>
+    <string name="USER" translatable="false">18</string>
+    <string name="REPORT_SMS_TRIGGER" translatable="false">371</string>
+    <string name="SMS_CODE" translatable="false">130</string>
+    <string name="TOKEN" translatable="false">125</string>
+    <string name="PHONE_STATUS_APPROVE" translatable="false">807</string>
+    <string name="PHONE_STATUS" translatable="false">806</string>
+    <string name="REPORT_AUTH" translatable="false">1446</string>
+    <string name="REPORT_PHONE_STATUS_CHECK" translatable="false">2299</string>
+    <string name="REPORT_PARTICIPANT_INFO" translatable="false">5929</string>
+    <string name="MEETING_HASH" translatable="false">213</string>
+    <string name="MEETING" translatable="false">216</string>
+    <string name="REPORT_INVITATIONS" translatable="false">1841</string>
+    <string name="REPORT_USER_LOCATION" translatable="false">5471</string>
+    <string name="LOCATION_LONGITUDE" translatable="false">222</string>
+    <string name="LOCATION_LATITUDE" translatable="false">1769</string>
+    <string name="METADATA_USER_LOCATION" translatable="false">2425</string>
+    <string name="MEETING_INVITATION" translatable="false">262</string>
+    <string name="INVITATION_STATUS" translatable="false">283</string>
+    <string name="INVITATION_PARTICIPANT" translatable="false">277</string>
+    <string name="STATUS_INV_REJECTED" translatable="false">1849</string>
+    <string name="STATUS_INV_QUICK" translatable="false">2900</string>
+    <string name="STATUS_INV_NEW" translatable="false">284</string>
+    <string name="STATUS_INV_ARCHIVED" translatable="false">2051</string>
+    <string name="STATUS_INV_ACCEPTED" translatable="false">1848</string>
+</resources>
+

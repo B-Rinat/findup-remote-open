@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/backgroundPrimary"
+    tools:context=".activities.authorization.Auth">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true"
+        android:theme="@style/ProgressTheme"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_code_activation_hint" />
+
+    <EditText
+        android:id="@+id/edit_country_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/input_text_style"
+        android:digits="0123456789"
+        android:drawableEnd="@drawable/ic_expand_more"
+        android:hint="@string/country_code"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/rectangleColorActiveText"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_text_style"
+        android:digits="0123456789"
+        android:hint="@string/phone_format_hint"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="@color/rectangleColorActiveText"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_country_code"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/text_code_activation_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="false"
+        android:text="@string/activation_code_on_phone"
+        android:textColor="@color/backgroundMenu"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_enter_into_app"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <Button
+        android:id="@+id/button_enter_into_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_background_rec_blue"
+        android:gravity="center"
+        android:hint="@string/send"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_phone_number" />
+
+</android.support.constraint.ConstraintLayout>

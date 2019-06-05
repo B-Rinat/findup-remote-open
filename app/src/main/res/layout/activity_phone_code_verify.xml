@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPrimary">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">
+    </include>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="24dp"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:theme="@style/ProgressTheme"
+        app:layout_constraintStart_toStartOf="@+id/send_code_more_than_once"
+        app:layout_constraintTop_toTopOf="@+id/send_code_more_than_once" />
+
+    <TextView
+        android:id="@+id/text_enter_verif_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="38dp"
+        android:gravity="center"
+        android:text="@string/enter_received_code"
+        android:textColor="@color/backgroundMenu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar" />
+
+    <EditText
+        android:id="@+id/edit_user_code_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_text_style"
+        android:ems="10"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="@color/rectangleColorActiveText"
+        android:textColorHint="@color/rectangleColorPassiveText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_enter_verif_code" />
+
+    <TextView
+        android:id="@+id/text_confirm_sms_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_background_rec_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/send"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_code_more_than_once" />
+
+    <LinearLayout
+        android:id="@+id/send_code_more_than_once"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_user_code_sms">
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
