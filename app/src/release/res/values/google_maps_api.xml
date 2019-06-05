@@ -18,5 +18,5 @@
     //YOUR_KEY_HERE
     -->
 
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBs06wMDx7E_vFkryEvXYsyQiM3M_l3FRI</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">GOOGLE_MAPS_API_KEY</string>
 </resources>
